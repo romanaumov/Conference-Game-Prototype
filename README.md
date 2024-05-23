@@ -8,7 +8,7 @@ The presentation of our group project was available in the folder "Presentation"
 ## The pipeline how to deploy this web application into Amazon Cloud (AWS) is below
 
 
-### 1. Clone this repository into <PATH-YOUR-LOCAL-DIRECTORY> on local computer
+### 1. Clone this repository into `PATH-YOUR-LOCAL-DIRECTORY` on local computer
 
 git clone https://github.com/romanaumov/Conference-Game-Prototype.git
 
@@ -20,14 +20,16 @@ Basic information how to create and tune your EC2 instance you can find on the o
 
 ### 3. AWS setup
 
-1. To work with EC2 instance you should connect to this virtual environment. You can do it using `ssh` or just use AWS web interface to click the `Connect` button on the top right corner of EC2 instance page and select the tab `EC2 Instance Connect` by default, you will be able to connect to the instance without any further setup.)
+1. To work with EC2 instance you should connect to this virtual environment. You can do it using `ssh` or just use AWS web interface to click the `Connect` button on the top right corner of EC2 instance page and select the tab `EC2 Instance Connect` by default, you will be able to connect to the instance without any further setup.
 
 ![AWS connection](./images_for_readme/aws-conn.png)
 
-2. Copy the folder from <PATH-YOUR-LOCAL-DIRECTORY> to EC2 home directory running the command below on your local machine
+2. Copy the folder from `PATH-YOUR-LOCAL-DIRECTORY` to EC2 home directory running the command below on your local machine
 
->> cd <PATH-YOUR-LOCAL-DIRECTORY>/Conference-Game-Prototype
->> scp -i <PATH-TO-YOUR-PEM-KEY-ON-LOCAL-MACHINE> -r iConferenceGame ubuntu@<EC2-PUBLIC-IP-ADDRESS>:/home/ubuntu/ 
+```bash
+cd <PATH-YOUR-LOCAL-DIRECTORY>/Conference-Game-Prototype
+scp -i <PATH-TO-YOUR-PEM-KEY-ON-LOCAL-MACHINE> -r iConferenceGame ubuntu@<EC2-PUBLIC-IP-ADDRESS>:/home/ubuntu/
+```
 
 
 ### 4. Set Flask app environment on EC2
@@ -85,7 +87,7 @@ sudo apt-get install nginx
 sudo systemctl start nginx
 ```
 
-3. Enable Nginx reverse proxy by updating a file named `default` in the `/etc/nginx/sites-available/` folder. You should replace the IP address in the file with your <EC2-PUBLIC-IP-ADDRESS> IP address.
+3. Enable Nginx reverse proxy by updating a file named `default` in the `/etc/nginx/sites-available/` folder. You should replace the IP address in the file with your `EC2-PUBLIC-IP-ADDRESS` IP address.
 
 ```bash
 server {
@@ -115,7 +117,7 @@ server {
 sudo systemctl restart nginx
 ```
 
-![Nginx and Flask statuses](./images_for_readme/nginx_flask_status.png)
+![Nginx and Flask status](./images_for_readme/nginx_flask_status.png)
 
 Now the game will be avalable at the EC2 public IP address from the browser. `http://<EC2-PUBLIC-IP-ADDRESS>`
 
