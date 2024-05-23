@@ -32,7 +32,7 @@ scp -i <PATH-TO-YOUR-PEM-KEY-ON-LOCAL-MACHINE> -r iConferenceGame ubuntu@<EC2-PU
 ```
 
 
-### 4. Set Flask app environment on EC2
+### 4. Setup Flask app environment on EC2
 
 1. Using bash on EC2 create the `venv` folder in the `iConferenceGame` folder and activate this environment using the following commands:
 2. Enter to the folder `iConferenceGame` using the command `cd iConferenceGame`
@@ -52,10 +52,10 @@ pip install requirements.txt
 
 4. Finally, your app folder should be like the following:
 
-![Files structure](./images_for_readme/aws-files.jpg)
+![Files structure](./images_for_readme/aws-files.png)
 
 
-### 5. Set Gunicorn environment on EC2
+### 5. Setup Gunicorn environment on EC2
 
 1. Copy a `flaskapp.service` file from `iConferenceGame` to the `/etc/systemd/system/` folder using the command 
 
@@ -72,7 +72,7 @@ sudo systemctl start flaskapp
 sudo systemctl enable flaskapp
 ```
 
-### 6. Set Nginx environment on EC2 
+### 6. Setup Nginx environment on EC2 
 
 1. Install nginx by running the following command:
 
@@ -127,11 +127,17 @@ Now the game will be avalable at the EC2 public IP address from the browser. `ht
 You can see the workflow (screenshots) of the Conference Mini Game below
 
 ![Page 1](./images_for_readme/page1.jpg)
+
 ![Page 2](./images_for_readme/page2.jpg)
+
 ![Page 3](./images_for_readme/page3.jpg)
+
 ![Page 4](./images_for_readme/page4.jpg)
+
 ![Page 5](./images_for_readme/page5.jpg)
+
 ![Page 6](./images_for_readme/page6.jpg)
+
 ![Page 7](./images_for_readme/page7.jpg)
 
 
