@@ -524,7 +524,8 @@
             font-weight: 400;
             letter-spacing: 0;
             line-height: 120%;
-            text-align: left
+            text-align: left;
+            margin-top: 30px
         }
 
         .bee-row-13 .bee-col-2 .bee-block-1 p:not(:last-child),
@@ -693,7 +694,7 @@
 <div class="bee-row bee-row-11">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w4">
-<div class="bee-block bee-block-1 bee-image"><img alt="Your Logo" class="bee-center bee-fixedwidth" src="{{ url_for('static', filename='images/Logo.png') }}" style="max-width:170px;"/></div>
+<div class="bee-block bee-block-1 bee-image"><a href="{{ url_for('home') }}" target="_self"><img alt="HIT Lab Game Logo" class="bee-center bee-fixedwidth" src="{{ url_for('static', filename='images/Logo.png') }}" style="max-width:250px;"/></a></div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w8">
 <div class="bee-block bee-block-1 bee-heading">
@@ -706,7 +707,7 @@
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-heading">
-<h2 style="color:#1cade7;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:30px;font-weight:400;letter-spacing:normal;line-height:80%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">Answer the question!</span></strong> </h2>
+<h2 style="color:#1cade7;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:30px;font-weight:400;letter-spacing:normal;line-height:80%;text-align:center;margin-top:0;margin-bottom:0;"><strong><span class="tinyMce-placeholder">Answer the question</span></strong> </h2>
 </div>
 </div>
 </div>
@@ -720,7 +721,7 @@
 </div>
 <div class="bee-col bee-col-2 bee-col-w8">
 <div class="bee-block bee-block-1 bee-paragraph">
-<p>Name as many works as possible related to improving the environment with the help of AI that you have come across recently.</p>
+<p>What do you think about AI that will evaluate your answers?</p>
 </div>
 </div>
 </div>
@@ -729,7 +730,7 @@
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w4">
 <div class="bee-block bee-block-1 bee-heading">
-<h1 style="color:#b1f08b;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:29px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Our Smart AI is recording your answer!</span> </h1>
+<h1 style="color:#b1f08b;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:29px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Our Smart AI is recording your answer</span> </h1>
 </div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w8">
@@ -740,10 +741,7 @@
 <div class="bee-row bee-row-15">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<!-- <div class="bee-block bee-block-1 bee-spacer">
-<div class="spacer" style="height:60px;"></div>
-</div> -->
-<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="{{ url_for('page6') }}" style="font-size: 30px; background-color: #7747FF; border-bottom: 10px solid transparent; border-left: 10px solid transparent; border-radius: 12px; border-right: 10px solid transparent; border-top: 10px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; width: 45%; display: inline-block;" target="_self"><span style="word-break: break-word; font-size: 30px; line-height: 200%;">Press to stop recording!</span></a></div>
+<div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="{{ url_for('page6') }}" style="font-size: 30px; background-color: #7747FF; border-bottom: 10px solid transparent; border-left: 10px solid transparent; border-radius: 12px; border-right: 10px solid transparent; border-top: 10px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; width: 45%; display: inline-block;" target="_self"><span style="word-break: break-word; font-size: 30px; line-height: 200%;">Go to next player!</span></a></div>
 <div class="bee-block bee-block-3 bee-spacer">
 <div class="spacer" style="height:60px;"></div>
 </div>

@@ -33,18 +33,18 @@ def page2():
     return render_template_string(html_contents)
 
 # Set the get endpoint URL
-@app.route('/page3', methods=['GET'])
-def page3():
-    print('Get the Second page...')
+# @app.route('/page3', methods=['GET'])
+# def page3():
+#     print('Get the Second page...')
     
-    path = './web/3.html'
+#     path = './web/3.html'
     
-    # Read the contents of the HTML file
-    with open(path, 'r') as html_file:
-        html_contents = html_file.read()
+#     # Read the contents of the HTML file
+#     with open(path, 'r') as html_file:
+#         html_contents = html_file.read()
         
-    # Render an HTML template with the HTML contents
-    return render_template_string(html_contents)
+#     # Render an HTML template with the HTML contents
+#     return render_template_string(html_contents)
 
 @app.route('/page4', methods=['POST'])
 def page4():
